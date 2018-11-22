@@ -4,7 +4,7 @@ import java.util.List;
 
 import static com.craftinginterpreters.lox.TokenType.*;
 
-public class Parser {
+class Parser {
     private static class ParseError extends RuntimeException {}
     private final List<Token> tokens;
     private int current = 0;
